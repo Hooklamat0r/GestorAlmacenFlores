@@ -21,12 +21,6 @@ class ProductoController extends Controller
         return view('productos.create', compact('categorias'));
     }
 
-    public function madi()
-    {
-        $categorias = Categoria::all();
-        return view('productos.madi', compact('categorias'));
-    }
-
     public function store(Request $request)
     {
         $request->validate([
