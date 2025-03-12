@@ -20,7 +20,6 @@ Route::delete('/categorias/{id}', [CategoriaController::class, 'destroy'])->name
 
 // Rutas para Productos
 Route::get('/productos', [ProductoController::class, 'index'])->name('productos.index');
-Route::get('/productos/madi', [ProductoController::class, 'madi'])->name('productos.madi');
 Route::get('/productos/create', [ProductoController::class, 'create'])->name('productos.create');
 Route::post('/productos', [ProductoController::class, 'store'])->name('productos.store');
 Route::get('/productos/{id}/edit', [ProductoController::class, 'edit'])->name('productos.edit');
